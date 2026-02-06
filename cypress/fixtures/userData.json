@@ -9,18 +9,5 @@
 
       "username": "Dina20",
       "password": "s3cret123"
-    },
-
-    "passwordFail":{
-
-      "username": "Admin",
-      "password": "admin1234"
-    },
-
-    "userEmpty":{
-
-      "username": " ",
-      "password": " "
     }
-
   }

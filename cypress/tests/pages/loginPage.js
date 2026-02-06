@@ -1,6 +1,3 @@
-import { RememberMe } from "@mui/icons-material"
-import { create } from "lodash"
-
 class loginPage {
     selectorList() {
         const selectors = {
@@ -9,7 +6,8 @@ class loginPage {
             loginButton: "[data-test='signin-submit']",
             wrongCredentialAlert: "[data-test='signin-error']",
             emptyUsernamedAlert: "[data-test='signup']",
-            RememberMeCheckbox: "[data-test='signin-remember-me']"
+            RememberMeCheckbox: "[data-test='signin-remember-me']",
+            signupLink: "[data-test='signup']" 
         }
 
         return selectors
@@ -31,6 +29,10 @@ class loginPage {
 
     checkEmptyField(){
         cy.get(this.selectorList().emptyUsernamedAlert)
+    }
+
+    acessRegisterPage(){
+        cy.get(this.selectorList().signupLink).click()
     }
 
 }
