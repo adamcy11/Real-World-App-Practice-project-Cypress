@@ -7,7 +7,7 @@ class loginPage {
             wrongCredentialAlert: "[data-test='signin-error']",
             emptyUsernamedAlert: "[data-test='signup']",
             RememberMeCheckbox: "[data-test='signin-remember-me']",
-            signupLink: "[data-test='signup']" 
+            signupLink: "[data-test='signup']"
         }
 
         return selectors
@@ -29,6 +29,7 @@ class loginPage {
 
     checkEmptyField(){
         cy.get(this.selectorList().emptyUsernamedAlert)
+
     }
 
     acessRegisterPage(){
