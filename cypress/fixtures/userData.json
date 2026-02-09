@@ -9,15 +9,5 @@
 
       "username": "Dina20",
       "password": "s3cret123"
-    },
-
-     "registerFail": {
-
-      "firstNameField": " ",
-      "lastNameField": " ",
-      "userNameField": " ",
-      "passwordField": "    ",
-      "confirmPasswordField": "    "
     }
-
   }
